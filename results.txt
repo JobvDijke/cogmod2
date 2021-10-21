@@ -1,0 +1,69 @@
+0.000 diskLarge.location counter1
+   0.000 diskLarge.isa diskLarge
+   0.000 agent.production_threshold None
+   0.000 agent.production_time_sd None
+   0.000 agent.production_match_delay 0
+   0.000 agent.production_time 0.05
+   0.000 agent.focus.chunk None
+   0.000 diskMedium.location diskLarge
+   0.000 diskMedium.isa diskMedium
+   0.000 diskSmall.location diskMedium
+   0.000 diskSmall.isa diskSmall
+   0.000 agent.focus.chunk smallDiskCounter3
+   0.000 agent.production smallDiskStep1
+   0.050 agent.production None
+I have a small disk
+place the small disk on the third counter
+   0.050 diskSmall.location counter3
+   0.050 agent.focus.chunk mediumDiskCounter2
+   0.050 agent.production mediumDiskStep2
+   0.100 agent.production None
+I have a medium disk
+place the medium disk on the second counter
+   0.100 diskMedium.location counter2
+   0.100 agent.focus.chunk smallDiskMediumDisk
+   0.100 agent.production smallDiskStep3
+   0.150 agent.production None
+I have a small disk
+place the small disk on the medium disk
+   0.150 diskSmall.location diskMedium
+   0.150 agent.focus.chunk largeDiskCounter3
+   0.150 agent.production largeDiskStep4
+   0.200 agent.production None
+I have a large disk
+place the large disk on the third counter
+   0.200 diskLarge.location counter3
+   0.200 agent.focus.chunk smallDiskCounter1
+   0.200 agent.production smallDiskStep5
+   0.250 agent.production None
+I have a small disk
+place the small disk on the first counter
+   0.250 diskSmall.location counter1
+   0.250 agent.focus.chunk mediumDiskLargeDisk
+   0.250 agent.production mediumDiskStep6
+   0.300 agent.production None
+I have a medium disk
+place the medium disk on the large disk
+   0.300 diskMedium.location diskLarge
+   0.300 agent.focus.chunk smallDiskMediumDisk
+   0.300 agent.production smallDiskStep7
+   0.350 agent.production None
+I have a small disk
+place the small disk on the medium disk
+   0.350 diskSmall.location diskMedium
+   0.350 agent.focus.chunk stop
+   0.350 agent.production stop_production
+   0.400 agent.production None
+I am done
+Small disk at: diskMedium
+Medium disk at: diskLarge
+Large disk at: counter3
+
+
+
+
+
+
+
+
+
